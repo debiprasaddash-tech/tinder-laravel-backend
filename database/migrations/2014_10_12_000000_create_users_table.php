@@ -15,7 +15,7 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->integer('age')->nullable();
-        $table->text('pictures')->nullable(); // JSON or comma-separated URLs
+        $table->json('pictures')->nullable();// JSON or comma-separated URLs
         $table->string('location')->nullable();
         $table->timestamps();
     });
